@@ -19,7 +19,7 @@ const IndexPage = () => (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Trackversal" description="The ultimate asset tracking system" />
 
         <AboutPanel />
         <Services id="features" />

@@ -22,6 +22,7 @@ const Hero = () => {
       spacing={3}
       style={{ height: 'calc(100vh + 1rem)' }}
       className={classes.heroContainer}
+      id="home"
     >
       <svg
         viewBox="0 0 500 150"

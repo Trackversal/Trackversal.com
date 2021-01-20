@@ -50,9 +50,9 @@ const Header = ({ companyName }: Props) => {
   }
 
   const navLinks = [
-    { displayText: "Home", link: "#" },
-    { displayText: "About", link: "#about" },
-    { displayText: "Features", link: "#features" },
+    { displayText: "Home", scrollTo: "home" },
+    { displayText: "About", scrollTo: "about" },
+    { displayText: "Features", scrollTo: "features" },
     // { displayText: "Testimonials", link: "#testimonials" },
     // { displayText: "Blog", link: "#blog" },
   ]
@@ -82,7 +82,17 @@ const Header = ({ companyName }: Props) => {
 
           <Hidden xsDown>
             {navLinks.map(item => (
-              <Button color="inherit" key={item.displayText} href={item.link}>
+              <Button
+                color="inherit"
+                key={item.displayText}
+                onClick={() => {
+                  window.scrollTo(
+                    0,
+                    document.getElementById(item.scrollTo).offsetTop -
+                      document.getElementsByTagName("header")[0].offsetHeight
+                  )
+                }}
+              >
                 {item.displayText}
               </Button>
             ))}
@@ -101,7 +111,14 @@ const Header = ({ companyName }: Props) => {
       >
         <List className={classes.drawerList}>
           {navLinks.map((item, index) => (
-            <ListItem button key={item.displayText}>
+            <ListItem button key={item.displayText} onClick={() => {
+              window.scrollTo(
+                0,
+                document.getElementById(item.scrollTo).offsetTop -
+                  document.getElementsByTagName("header")[0].offsetHeight
+              );
+              setOpen(false);
+            }}>
               <ListItemText primary={item.displayText} />
             </ListItem>
           ))}
