@@ -20,7 +20,7 @@ const Hero = () => {
     <Grid
       container
       spacing={3}
-      style={{ height: '100vh' }}
+      style={{ height: 'calc(100vh + 1rem)' }}
       className={classes.heroContainer}
     >
       <svg
@@ -40,7 +40,7 @@ const Hero = () => {
       >
         <path
           d="M-59.53,178.13 C210.78,82.39 246.32,40.95 526.24,120.88 L500.00,150.00 L-21.72,175.16 Z"
-          style={{ stroke: "none", fill: "#DCD6FF", }}
+          style={{ stroke: "none", fill: "#DCD6FFdd", }}
         ></path>
       </svg>
       <svg
@@ -50,7 +50,7 @@ const Hero = () => {
       >
         <path
           d="M-25.11,131.73 C210.78,82.39 256.49,184.03 500.84,97.20 L500.00,150.00 L-21.72,175.16 Z"
-          style={{ stroke: "none", fill: "#FFEBFF" }}
+          style={{ stroke: "none", fill: "#FFEBFFcc" }}
         ></path>
       </svg>
       <Grid
@@ -66,18 +66,18 @@ const Hero = () => {
         <Typography
           variant="h3"
           color="inherit"
-          style={{ marginBottom: 20, zIndex: 800 }}
+          style={{ marginBottom: 20, zIndex: 800, fontWeight: 600 }}
         >
           A better, cheaper way to keep track of your belongings
         </Typography>
 
         <Typography
-          variant="subtitle1"
+          variant="h5"
           style={{ marginBottom: 30, zIndex: 800 }}
         >
           Trackversal is the universal asset tracking solution you've been looking for.
         </Typography>
-        <Button variant="contained" color="primary" size="large">
+        <Button variant="contained" color="primary" size="large" disabled>
           Closed beta coming soon
         </Button>
       </Grid>

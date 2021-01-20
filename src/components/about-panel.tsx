@@ -47,7 +47,7 @@ const AboutPanel = () => {
           style={{ padding: 10 }}
         >
           <div style={{ width: '100%' }}>
-            <PlaceholderSvg attribution="City vector created by vectorjuice" style={{width: '50vw', height: '50vw'}}/>
+            <PlaceholderSvg attribution="City vector created by vectorjuice" style={{width: '100%', height: '100%'}}/>
           </div>
         </Grid>
       </Hidden>

@@ -111,7 +111,7 @@ const NewsletterPanel: React.FunctionComponent<{}> = () => {
                   onChange={handleEmailChange}
                 />
                 {/* <button type="submit">Subscribe</button> */}
-                <Button type="submit" variant="contained" color="primary" size="medium" style={{marginLeft: 20}}>
+                <Button type="submit" variant="contained" color="primary" size="large" style={{marginLeft: 20}}>
                   Subscribe
                 </Button>
                 <Typography
