@@ -22,7 +22,7 @@ const theme = createMuiTheme({
     secondary: {
       main: "#4895EF",
       light: "#70A7FF",
-    }
+    },
     // error: {
     //   main: red.A400,
     // },
@@ -30,12 +30,12 @@ const theme = createMuiTheme({
       // default: "#fff",
       // default: "#dddfff",
     // },
-    // text: {
-    //   primary: "#000",
-    //   secondary: "#7D7987",
-    //   disabled: "#CCC",
-    //   hint: "#7D7987",
-    // },
+    text: {
+      primary: "#000",
+      secondary: "#FFF",
+      disabled: "#CCC",
+      hint: "#7D7987",
+    },
   },
   shape: {
     borderRadius: 20,

@@ -41,7 +41,7 @@ const NewsletterPanel: React.FunctionComponent<{}> = () => {
   };
 
   return (
-    <Grid container spacing={3} style={{ minHeight: 500 }}>
+    <Grid container spacing={3} style={{ minHeight: 250 }}>
         <Grid
           item={true}
           sm={6}
@@ -57,8 +57,8 @@ const NewsletterPanel: React.FunctionComponent<{}> = () => {
               filename="about-illustration.png"
             /> */}
 
-        <Typography variant="h4" color="inherit">
-          Sign up to be notified of development progress!
+        <Typography variant="h5" color="inherit">
+          Enter your email address to be one of the first to try out Trackversal!
         </Typography>
         <Bar />
         {/* <Typography

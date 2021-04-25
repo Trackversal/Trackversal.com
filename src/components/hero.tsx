@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import { navigate } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Button from "@material-ui/core/Button"
@@ -7,15 +8,27 @@ import Hidden from "@material-ui/core/Hidden"
 import { makeStyles } from "@material-ui/core"
 import HeroSvg from '../images/globe.svg';
 
+let roughNotation =
+  typeof window !== `undefined` ? require("react-rough-notation") : null
+
 const styles = makeStyles(theme => ({
   heroContainer: {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.main,
     position: "relative",
   },
 }))
 
 const Hero = () => {
   const classes = styles()
+
+  const multiline = false
+  const color = "purple"
+  const animationDelay = "500"
+  const animationDuration = 1000
+
+  const RoughNotation = roughNotation && roughNotation.RoughNotation
+  const RoughNotationGroup = roughNotation && roughNotation.RoughNotationGroup
+
   return (
     <Grid
       container
@@ -66,7 +79,7 @@ const Hero = () => {
       >
         <Typography
           variant="h3"
-          color="inherit"
+          color="textSecondary"
           style={{ marginBottom: 20, zIndex: 800, fontWeight: 600 }}
         >
           A better, cheaper way to keep track of your belongings
@@ -74,12 +87,38 @@ const Hero = () => {
 
         <Typography
           variant="h5"
+          color="textSecondary"
           style={{ marginBottom: 30, zIndex: 800 }}
         >
-        Stop paying costly subscriptions or settle for limited range, and get started with Trackversal!
+          Stop paying 
+          {RoughNotationGroup && RoughNotation && (
+            <RoughNotationGroup show={true}>
+              <RoughNotation
+                type="underline"
+                color={"yellow"}
+                multiline={multiline}
+                animationDelay={animationDelay}
+                animationDuration={animationDuration}
+                strokeWidth="2"
+              >
+                &nbsp;costly subscriptions&nbsp;
+              </RoughNotation>
+              or settle for
+              <RoughNotation
+                type="strike-through"
+                color={"orange"}
+                multiline={multiline}
+                animationDelay={animationDelay}
+                animationDuration={animationDuration}
+              >
+                &nbsp;limited range&nbsp;
+              </RoughNotation>
+            </RoughNotationGroup>
+          )}
+          , and get started with Trackversal!
         </Typography>
-        <Button variant="contained" color="primary" size="large" disabled>
-          Closed beta coming soon
+        <Button variant="contained" color="primary" size="large" onClick={() => { navigate("/coming-soon") }}>
+          Get yours today!
         </Button>
       </Grid>
       <Hidden xsDown>
@@ -93,7 +132,7 @@ const Hero = () => {
           style={{ padding: 10 }}
         >
           <div style={{ width: "100%", zIndex: 800 }}>
-            <HeroSvg style={{zIndex: 800}}/>
+            <HeroSvg style={{ zIndex: 800 }} />
           </div>
         </Grid>
       </Hidden>
