@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -21,7 +22,7 @@ interface Props {
 const useStyles = makeStyles(theme => ({
   appBar: {
     // color: "#233348",
-    // backgroundColor: "#FFF",
+    backgroundColor: theme.palette.primary.main,
     position: "fixed",
   },
   toolbar: {
@@ -77,7 +78,7 @@ const Header = ({ companyName }: Props) => {
             color="inherit"
             className={classes.toolbarTitle}
           >
-            Trackversal
+            <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Trackversal</Link>
           </Typography>
 
           <Hidden xsDown>
@@ -86,11 +87,13 @@ const Header = ({ companyName }: Props) => {
                 color="inherit"
                 key={item.displayText}
                 onClick={() => {
-                  window.scrollTo(
-                    0,
-                    document.getElementById(item.scrollTo).offsetTop -
-                      document.getElementsByTagName("header")[0].offsetHeight
-                  )
+                  if (document.getElementById(item.scrollTo) != null) {
+                    window.scrollTo(
+                      0,
+                      document.getElementById(item.scrollTo).offsetTop -
+                        document.getElementsByTagName("header")[0].offsetHeight
+                    )
+                  }
                 }}
               >
                 {item.displayText}

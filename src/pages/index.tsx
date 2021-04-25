@@ -17,7 +17,7 @@ import "../css/main.css"
 
 const IndexPage = () => (
   <React.Fragment>
-    {/* <Header /> */}
+    <Header />
     <Hero />
     <ThemeProvider theme={theme}>
       <CssBaseline />

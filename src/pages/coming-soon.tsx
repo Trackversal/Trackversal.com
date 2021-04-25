@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Services from "../components/services"
@@ -28,6 +29,7 @@ const ComingSoonPage = () => (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
+        <Header />
         {/* <SEO title="Trackversal" description="The ultimate asset tracking system" /> */}
         <Typography variant="h5" color="inherit" style={{ marginTop: 50, zIndex: 800 }}>
           Uh oh! You caught us before we're ready! 🎉🎉🎉
