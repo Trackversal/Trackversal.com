@@ -76,7 +76,7 @@ const Hero = () => {
           variant="h5"
           style={{ marginBottom: 30, zIndex: 800 }}
         >
-          Trackversal is the universal asset tracking solution you've been looking for.
+        Stop paying costly subscriptions or settle for limited range, and get started with Trackversal!
         </Typography>
         <Button variant="contained" color="primary" size="large" disabled>
           Closed beta coming soon

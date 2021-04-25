@@ -19,7 +19,7 @@ const Services = props => {
       image: "creditcard.png",
       title: "Starting from $0/month",
       description:
-        "From having absolutely no monthly fees to our premium plans, there's always a plan that works for you!",
+        "No more expensive hidden or monthly fees, and only pay for what you use.",
     },
     {
       id: 3,
@@ -30,12 +30,12 @@ const Services = props => {
     },
     {
       id: 4,
-      image: "radar.png",
-      title: "Wifi",
-      attribution: '<div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>',
-      description:
-        "With Wi-Fi geopositioning, your local wifi access points just turned into location beacons!",
+      image: "lock.png",
+      title: "Hardware-backed Security",
+      attribution: '<div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>',
+      description: "With local millitary grade encryption, not even us have the ability to access your data.",
     },
+    
     {
       id: 5,
       image: "bluetooth.png",
@@ -57,6 +57,14 @@ const Services = props => {
       title: "GPS, GLONASS, Galileo, Beidou",
       attribution: '<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>',
       description: "The device leverages powerful geopositioning satellites to guarantee location accuracy.",
+    },
+    {
+      id: 8,
+      image: "radar.png",
+      title: "Wifi",
+      attribution: '<div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>',
+      description:
+        "With Wi-Fi geopositioning, your local wifi access points just turned into location beacons!",
     },
   ]
 
