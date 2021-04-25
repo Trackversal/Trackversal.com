@@ -24,7 +24,7 @@ const ServiceCard = ({ service, ...props }: IProps) => {
         <Typography variant="h6" color="inherit">
           {service.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textPrimary" component="p">
           {service.description}
         </Typography>
       </CardContent>

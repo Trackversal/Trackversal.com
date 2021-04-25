@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header"
 import Hero from "../components/hero"
 import Services from "../components/services"
 import AboutPanel from "../components/about-panel"
@@ -16,6 +17,7 @@ import "../css/main.css"
 
 const IndexPage = () => (
   <React.Fragment>
+    {/* <Header /> */}
     <Hero />
     <ThemeProvider theme={theme}>
       <CssBaseline />

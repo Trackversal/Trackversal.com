@@ -33,7 +33,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <React.Fragment>
-      <Header />
+      {/* <Header /> */}
       {/* <Hero /> */}
       <Box
         style={{

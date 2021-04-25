@@ -20,7 +20,7 @@ const Footer = () => {
   const classes = footerStyles();
   const footerLinks = [
     {
-      title: "Company",
+      title: "Get in touch!",
       items: [
         { displayText: "Contact us: contact@trackversal.com", url: "mailto:contact@trackversal.com" },
         // {
@@ -77,7 +77,7 @@ const Footer = () => {
                 Trackversal
               </Typography>
               <Typography variant="body2" color="inherit">
-                The ultimate asset tracking ecosystem.
+                The ultimate smart asset tracking ecosystem.
               </Typography>
               <Typography variant="body2" color="inherit">
                 ©Trackversal 2021. All rights reserved
