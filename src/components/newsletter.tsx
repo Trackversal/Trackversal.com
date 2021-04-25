@@ -58,7 +58,7 @@ const NewsletterPanel: React.FunctionComponent<{}> = () => {
             /> */}
 
         <Typography variant="h5" color="inherit">
-          Enter your email address to be one of the first to try out Trackversal!
+          Enter your email address to reserve your spot as one of the first to try out Trackversal!
         </Typography>
         <Bar />
         {/* <Typography

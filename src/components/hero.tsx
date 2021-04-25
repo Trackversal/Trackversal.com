@@ -105,7 +105,7 @@ const Hero = () => {
               </RoughNotation>
               or settle for
               <RoughNotation
-                type="strike-through"
+                type="underline"
                 color={"orange"}
                 multiline={multiline}
                 animationDelay={animationDelay}
