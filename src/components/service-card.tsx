@@ -2,6 +2,7 @@ import React from "react"
 import Card from "@material-ui/core/Card"
 import CardContent from "@material-ui/core/CardContent"
 import Typography from "@material-ui/core/Typography"
+import Zoom from 'react-reveal/Zoom';
 import Image from "./image"
 
 interface IProps {
@@ -19,7 +20,9 @@ const ServiceCard = ({ service, ...props }: IProps) => {
     <Card>
       <CardContent style={{ textAlign: "start", minHeight: 200 }}>
         <div style={{ width: 80, padding: 10 }}>
-          <Image alt={service.title} filename={service.image} />
+          <Zoom>
+            <Image alt={service.title} filename={service.image} />
+          </Zoom>
         </div>
         <Typography variant="h6" color="inherit">
           {service.title}
